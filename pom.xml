@@ -31,6 +31,14 @@
                             <value>300</value>
                         </systemProperty>
                     </systemProperties>
+                         <profiles>
+                           <profile>
+                             <id>sonar</id>
+                               <activation>
+                                 <activeByDefault>true</activeByDefault>
+                                   </activation>
+                                      <properties>
+                                         <Optional URL to server. Default value is http://localhost:9000 >
                     <webApp>
                         <contextPath>/sample</contextPath>
                         <overrideDescriptor>${basedir}/etc/jetty/web.xml</overrideDescriptor>
